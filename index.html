@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    body {
+      background: #fafafa;
+      font-family: monospace;
+      font-size: 12px;
+      margin: 20px;
+    }
+    #tempo {
+      width: 180px;
+    }
+    #results {
+      margin-top: 20px;
+      display: flex;
+    }
+    #results .col {
+      width: 120px;
+    }
+    #results .row {
+      background: #fff;
+      padding: 8px;
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+  <button id="toggle" disabled>Start</button>
+  <label>
+    Tempo:
+    <input id="tempo" type="number"/>
+  </label>
+  <div id="results">
+    <div class="col">
+      <div class="row">Type:</div>
+      <div class="row">Peak:</div>
+      <div class="row">Average:</div>
+      <div class="row">Last:</div>
+    </div>
+  </div>
+  <script src="scripts/config.js"></script>
+  <script src="scripts/results.js"></script>
+  <script src="scripts/eme.js"></script>
+  <script src="scripts/sample.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
